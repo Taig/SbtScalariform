@@ -2,11 +2,12 @@ package io.taig
 
 import com.typesafe.sbt.SbtScalariform.{ScalariformKeys, scalariformSettings}
 import sbt._
+import sbt.plugins.JvmPlugin
 
 import scalariform.formatter.preferences._
 
 object FormatPlugin extends AutoPlugin {
-    override def requires = plugins.JvmPlugin
+    override def requires = JvmPlugin
 
     override def trigger = allRequirements
 
@@ -15,10 +16,10 @@ object FormatPlugin extends AutoPlugin {
             .setPreference( AlignParameters, true )
             .setPreference( AlignArguments, true )
             .setPreference( AlignSingleLineCaseStatements, true )
-            .setPreference( CompactControlReadability, true )
+            .setPreference( CompactControlReadability, false )
             .setPreference( CompactStringConcatenation, false )
             .setPreference( DoubleIndentClassDeclaration, true )
-            .setPreference( FormatXml, false )
+            .setPreference( FormatXml, true )
             .setPreference( IndentLocalDefs, false )
             .setPreference( IndentPackageBlocks, true )
             .setPreference( IndentSpaces, 4 )
