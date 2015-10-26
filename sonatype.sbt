@@ -1,24 +1,26 @@
+val id = "sbtscalariform"
+
 description := "Scalariform auto plugin with custom formatting settings"
 
-homepage := Some( url( "https://github.com/taig/sbtscalariform" ) )
+homepage := Some( url( s"https://github.com/taig/$id" ) )
 
-licenses := Seq( "MIT" -> url( "https://raw.githubusercontent.com/taig/sbtscalariform/master/LICENSE" ) )
+licenses := Seq( "MIT" -> url( s"https://raw.githubusercontent.com/taig/$id/master/LICENSE" ) )
 
 organizationHomepage := Some( url( "http://taig.io" ) )
 
 pomExtra := {
     <issueManagement>
-        <url>https://github.com/taig/sbtscalariform/issues</url>
+        <url>https://github.com/taig/{id}/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
-        <developers>
-            <developer>
-                <id>Taig</id>
-                <name>Niklas Klein</name>
-                <email>mail@taig.io</email>
-                <url>http://taig.io/</url>
-            </developer>
-        </developers>
+    <developers>
+        <developer>
+            <id>Taig</id>
+            <name>Niklas Klein</name>
+            <email>mail@taig.io</email>
+            <url>http://taig.io/</url>
+        </developer>
+    </developers>
 }
 
 pomIncludeRepository := { _ => false }
@@ -40,9 +42,9 @@ publishTo <<= version ( version => {
 
 scmInfo := Some(
     ScmInfo(
-        url( "https://github.com/taig/sbtscalariform" ),
-        "scm:git:git://github.com/taig/sbtscalariform.git",
-        Some( "scm:git:git@github.com:taig/sbtscalariform.git" )
+        url( s"https://github.com/taig/$id" ),
+        s"scm:git:git://github.com/taig/$id.git",
+        Some( s"scm:git:git@github.com:taig/$id.git" )
     )
 )
 
