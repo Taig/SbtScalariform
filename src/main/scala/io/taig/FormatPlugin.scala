@@ -19,6 +19,7 @@ object FormatPlugin extends AutoPlugin {
             .setPreference( CompactControlReadability, false )
             .setPreference( CompactStringConcatenation, false )
             .setPreference( DoubleIndentClassDeclaration, true )
+            .setPreference( DanglingCloseParenthesis, true )
             .setPreference( FormatXml, true )
             .setPreference( IndentLocalDefs, false )
             .setPreference( IndentPackageBlocks, true )

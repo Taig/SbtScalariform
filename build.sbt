@@ -1,4 +1,4 @@
-addSbtPlugin( "org.scalariform" % "sbt-scalariform" % "1.5.1"  )
+addSbtPlugin( "org.scalariform" % "sbt-scalariform" % "1.6.0"  )
 
 name := "SbtScalariform"
 
@@ -8,4 +8,6 @@ organization := "io.taig.sbt"
 
 sbtPlugin := true
 
-version := "1.5.1"
+scalaVersion := "2.10.6"
+
+version := "1.6.0"
