@@ -7,7 +7,7 @@ import sbt.plugins.JvmPlugin
 
 import scalariform.formatter.preferences._
 
-object FormatPlugin extends AutoPlugin {
+object ScalariformHouserulesPlugin extends AutoPlugin {
     override def requires = JvmPlugin && SbtScalariform
 
     override def trigger = allRequirements
