@@ -1,10 +1,10 @@
 addSbtPlugin( "org.scalariform" % "sbt-scalariform" % "1.6.0"  )
 
-name := "SbtScalariform"
+githubProject := "sbt-scalariform"
 
-normalizedName := "scalariform"
+name := "sbt-scalariform"
 
-organization := "io.taig.sbt"
+organization := "io.taig"
 
 sbtPlugin := true
 

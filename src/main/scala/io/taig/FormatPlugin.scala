@@ -1,5 +1,6 @@
 package io.taig
 
+import com.typesafe.sbt.SbtScalariform
 import com.typesafe.sbt.SbtScalariform.{ScalariformKeys, scalariformSettings}
 import sbt._
 import sbt.plugins.JvmPlugin
@@ -7,7 +8,7 @@ import sbt.plugins.JvmPlugin
 import scalariform.formatter.preferences._
 
 object FormatPlugin extends AutoPlugin {
-    override def requires = JvmPlugin
+    override def requires = JvmPlugin && SbtScalariform
 
     override def trigger = allRequirements
 

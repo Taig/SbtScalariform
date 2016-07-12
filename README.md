@@ -1,4 +1,4 @@
-# Sbt Scalariform
+# sbt Scalariform houserules plugin
 
 > Scalariform auto plugin with custom formatting settings
 
