@@ -7,5 +7,5 @@
 ## Installation
 
 ````
-addSbtPlugin( "io.taig" % "sbt-scalariform" % "1.6.0" )
+addSbtPlugin( "io.taig" % "sbt-scalariform" % "1.7.0" )
 ````
