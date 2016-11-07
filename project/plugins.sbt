@@ -1,1 +1,1 @@
-addSbtPlugin( "io.taig" % "sbt-sonatype" % "1.1.0" )
+addSbtPlugin( "io.taig" % "sbt-sonatype" % "1.1.1" )
