@@ -4,6 +4,7 @@ machine:
 
 dependencies:
   cache_directories:
+    - "~/.ivy"
     - "~/.sbt"
   override:
     - sbt update
